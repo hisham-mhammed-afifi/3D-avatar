@@ -189,7 +189,7 @@ export default function Sayed(props) {
   );
   const { animations: waving } = useFBX("/models/Sayed/Waving.fbx");
 
-  const [animation, setAnimation] = useState(TALKING);
+  const [animation, setAnimation] = useState(IDLE);
 
   const group = useRef();
   const { actions } = useAnimations([idle[0], talking[0], waving[0]], group);
